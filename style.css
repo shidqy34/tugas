@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    background-color: #3b4997;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+}
+
+.logo{
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu{
+    margin-left: 750px;
+    padding-top: 20px;
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover{
+    color: red;
+    font-style: italic;
+}
+
+.conten{
+    background-color: #3b5999;
+    height: 700px;
+    text-align: center;
+    color: white;
+}
+
+.conten img{
+    margin-top: 100px;
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid grey;
+}
+
+.conten h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.conten a button{
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.conten a button:hover{
+    background-color: rgb(41, 28, 158);
+    border: 1px  solid white;
+    color: white;
+}
+
+h1 span::before{
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 50px;
+}
+
+@keyframes gerak{
+    0%{
+        content: 'Haiii';
+    }
+    50%{
+        content: 'Nama saya Shidqy Muyassar';
+    }
+    100%{
+        content: 'Terima kasih sudah singgah';
+    }
+}
+
+.kotak{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.kotak-kiri,.kotak-tengah,.kotak-kanan{
+    width: 300px;
+    height: 320px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 60px 20px 20px 55px;
+    border-radius: 5px;
+    float: left;
+}
+
+.kotak-kiri:hover,.kotak-tengah:hover,.kotak-kanan:hover{
+    background-color: #3b5999;
+    color: white;
+}
+
+.kotak h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+.hobi{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 30px;
+    align-content: center;
+}
+
+.kotak-kiri,.kotak-tengah,.kotak-kanan{
+    width: 300px;
+    height: 500px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 60px 20px 20px 55px;
+    border-radius: 5px;
+    float: left;
+}
+
+.kotak-kiri:hover,.kotak-tengah:hover,.kotak-kanan:hover{
+    background-color: #3b5999;
+    color: white;
+}
+
+.kotak h3,p{
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+.contact{
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 100px;
+
+}
+
+.contact h2{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.icon:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: 0;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.icon:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.facebook {
+    background: linear-gradient(135deg, #3b5998, #8b9dc3);
+}
+
+.twitter {
+    background: linear-gradient(135deg, #1da1f2, #0d95e8);
+}
+
+.instagram {
+    background: linear-gradient(135deg, #e4405f, #d84b83);
+}
+
+.linkedin {
+    background: linear-gradient(135deg, #0077b5, #005c8d);
+}
